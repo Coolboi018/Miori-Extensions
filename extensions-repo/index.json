@@ -1,5 +1,5 @@
 {
-  "version": 1,
-  "changelog": "Initial extension repository template.",
-  "manifests": ["example.json"]
+  "version": 2,
+  "changelog": "Added MegaPlay (via mega-flow transform).",
+  "manifests": ["example.json", "mega.json"]
 }
