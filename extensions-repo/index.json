@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "changelog": "Initial extension repository template.",
+  "manifests": ["example.json"]
+}
