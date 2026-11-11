@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "changelog": "Added MegaPlay (via mega-flow transform).",
+  "manifests": ["example.json", "mega.json"]
+}
