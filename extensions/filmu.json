@@ -1,0 +1,25 @@
+{
+  "contractVersion": 1,
+  "id": "filmu",
+  "label": "Bingr (Anime)",
+  "version": "3.2.0",
+  "capabilities": { "subtitles": true, "skipMarkers": true, "thumbnails": true },
+  "match": { "transform": "filmu-match" },
+  "episodes": {
+    "url": "https://api.bingr.one/api/anime/{anilistId}/episodes?chunk={chunk}",
+    "headers": { "User-Agent": "{ua}", "Accept": "application/json" },
+    "paging": { "param": "chunk", "start": 0, "stopWhen": "has_next_page==false", "cap": 30 },
+    "map": {
+      "number": "$.episode",
+      "title": "$.title",
+      "poster": { "path": "$.still", "transform": "tmdb-w500" },
+      "synopsis": "$.overview"
+    },
+    "dedupeBy": "number",
+    "emptyIsFailure": true
+  },
+  "resolve": {
+    "transform": "filmu-flow",
+    "signed": true
+  }
+}

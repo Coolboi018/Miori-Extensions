@@ -1,5 +1,5 @@
 {
-  "version": 2,
-  "changelog": "Added MegaPlay (via mega-flow transform).",
-  "manifests": ["example.json", "mega.json"]
+  "version": 3,
+  "changelog": "Added Bingr/FilmU (via filmu-flow transform).",
+  "manifests": ["example.json", "mega.json", "filmu.json"]
 }
