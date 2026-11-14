@@ -1,0 +1,10 @@
+{
+  "contractVersion": 1,
+  "id": "zoko",
+  "label": "Zoko",
+  "version": "1.0.0",
+  "capabilities": { "subtitles": true, "skipMarkers": true, "thumbnails": false },
+  "match": { "transform": "zoko-match" },
+  "episodes": { "transform": "zoko-episodes", "emptyIsFailure": false },
+  "resolve": { "transform": "zoko-flow", "signed": true }
+}

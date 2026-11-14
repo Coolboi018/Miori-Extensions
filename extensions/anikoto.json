@@ -1,0 +1,10 @@
+{
+  "contractVersion": 1,
+  "id": "anikoto",
+  "label": "Anikoto",
+  "version": "1.0.0",
+  "capabilities": { "subtitles": true, "skipMarkers": true, "thumbnails": false },
+  "match": { "transform": "anikoto-match" },
+  "episodes": { "transform": "anikoto-episodes", "emptyIsFailure": true },
+  "resolve": { "transform": "anikoto-flow", "signed": false }
+}
